@@ -1,0 +1,11 @@
+/**************************************************************************************************************/
+                         README FILE FOR INTERRUPT BASED FILE RECEPTION CODE USING YMODEM  
+/**************************************************************************************************************/
+
+This code is dedicated only for receiving file through YMODEM protocol, designed for TM4C129X microcontroller.    
+
+Baudrate supported for transfer: 19200, 38400, 115200.
+
+Buffer Size Supported for reception of data: 64Bytes, 128Bytes and 256Bytes. The size of buffer can be changed in file ymodem.h
+
+The function Ymodem_Receive(uint8_t ) in file Ymodem.c should be called inside UART ISR configured for interrupt on reception of each byte.
